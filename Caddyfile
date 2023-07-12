@@ -1,0 +1,29 @@
+{
+    log {
+        level debug
+        output stdout
+    }
+}
+
+localhost {
+    handle_path /weddings/* {
+        file_server * {
+            root /home/kha/source-code/bcs/microservice/sample-web
+        }
+    }
+}
+
+# localhost/oliviaenrico {
+#     root * /home/kha/source-code/bcs/microservice/sample-web/olivia-enrico
+#     file_server browse
+# }
+
+# localhost:222 {
+#     root * /home/kha/source-code/bcs/microservice/sample-web/olivia-enrico
+#     file_server browse
+# }
+
+# localhost {
+#     root * /home/kha/source-code/bcs/microservice/sample-web/grandwedding
+#     file_server browse
+# }
